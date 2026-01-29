@@ -13,6 +13,28 @@
       line-height: 1.6;
     }
 
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(0,0,0,0.85);
+      padding: 0.8rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #00e6e6;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     header {
       padding: 3rem 1rem;
       text-align: center;
@@ -31,9 +53,10 @@
     }
 
     section {
-      padding: 2.5rem 1.5rem;
+      padding: 3rem 1.5rem;
       max-width: 1000px;
       margin: auto;
+      scroll-margin-top: 80px;
     }
 
     h2 {
@@ -100,32 +123,40 @@
 </head>
 <body>
 
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#imc">Masa corporal</a>
+    <a href="#calentamiento">Calentamiento</a>
+    <a href="#salud">Salud</a>
+    <a href="#protocolo">Protocolo</a>
+    <a href="#contacto">Trabaja conmigo</a>
+  </nav>
+
   <header>
     <h1>Pablo Mallo Domínguez</h1>
     <p>Entrenador Personal · Salud · Rendimiento · Bienestar</p>
   </header>
 
-  <section>
+  <section id="servicios">
     <h2>Servicios Profesionales</h2>
     <div class="cards">
       <div class="card">
         <h3>Eliminación de Grasa</h3>
-        <p>Programas enfocados en la reducción de grasa corporal de forma progresiva y saludable, combinando entrenamiento funcional, fuerza y control del esfuerzo.</p>
+        <p>Reducción de grasa corporal mediante entrenamientos estructurados, seguros y progresivos.</p>
       </div>
       <div class="card">
         <h3>Personalización de Rutinas</h3>
-        <p>Planes de entrenamiento adaptados a tu edad, condición física, objetivos y disponibilidad. Cada rutina es única y evoluciona contigo.</p>
+        <p>Planes de entrenamiento adaptados a cada persona según objetivos, nivel y tiempo disponible.</p>
       </div>
       <div class="card">
-        <h3>Mejora de la Condición Física</h3>
-        <p>Incremento de resistencia, fuerza, movilidad y coordinación, priorizando la prevención de lesiones y la técnica correcta.</p>
+        <h3>Condición Física General</h3>
+        <p>Mejora de fuerza, resistencia, movilidad y coordinación priorizando la salud.</p>
       </div>
     </div>
   </section>
 
-  <section>
-    <h2>Cálculo Orientativo de Masa Muscular</h2>
-    <p>Introduce tus datos para obtener una estimación básica (no sustituye una evaluación profesional).</p>
+  <section id="imc">
+    <h2>Cálculo Orientativo de Masa Corporal</h2>
     <div class="card calculator">
       <input type="number" id="peso" placeholder="Peso (kg)" />
       <input type="number" id="altura" placeholder="Altura (cm)" />
@@ -134,40 +165,37 @@
     </div>
   </section>
 
-  <section>
-    <h2>Ejercicios Básicos para Calentar</h2>
-    <div class="cards">
-      <div class="card">
-        <ul>
-          <li>Movilidad articular (cuello, hombros, caderas y rodillas)</li>
-          <li>Sentadillas controladas</li>
-          <li>Jumping jacks suaves</li>
-          <li>Rotaciones de tronco</li>
-          <li>Activación de core</li>
-        </ul>
-        <p>Un buen calentamiento prepara al cuerpo, mejora el rendimiento y reduce el riesgo de lesiones.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Por qué es Importante una Condición Física Saludable</h2>
+  <section id="calentamiento">
+    <h2>Ejercicios Básicos de Calentamiento</h2>
     <div class="card">
-      <p>Mantener una buena condición física mejora la calidad de vida, reduce el estrés, previene enfermedades, aumenta la energía diaria y fortalece tanto el cuerpo como la mente. El entrenamiento no es solo estética, es salud a largo plazo.</p>
+      <ul>
+        <li>Movilidad articular general</li>
+        <li>Sentadillas controladas</li>
+        <li>Jumping jacks</li>
+        <li>Rotaciones de tronco</li>
+        <li>Activación de core</li>
+      </ul>
     </div>
   </section>
 
-  <section>
+  <section id="salud">
+    <h2>Importancia de una Condición Física Saludable</h2>
+    <div class="card">
+      <p>Una buena condición física reduce el riesgo de enfermedades, mejora la salud mental, incrementa la energía diaria y garantiza una mejor calidad de vida a largo plazo.</p>
+    </div>
+  </section>
+
+  <section id="protocolo">
     <h2>Protocolo de Acoso</h2>
     <div class="card">
-      <p>Este espacio promueve el respeto absoluto. No se tolera ningún tipo de acoso, discriminación o conducta inapropiada. Cualquier situación será tratada con seriedad, confidencialidad y acciones inmediatas.</p>
+      <p>Se garantiza un entorno de respeto absoluto. No se tolera ningún tipo de acoso, abuso o discriminación bajo ninguna circunstancia.</p>
     </div>
   </section>
 
-  <section>
+  <section id="contacto">
     <h2>Trabaja Conmigo</h2>
     <div class="card">
-      <p>Si buscas un entrenador comprometido con tu salud, progreso y bienestar, estás en el lugar correcto. El objetivo es ayudarte a construir hábitos sostenibles y una mejor versión de ti mismo.</p>
+      <p>Entrenamiento enfocado en resultados reales, hábitos sostenibles y bienestar integral. Compromiso total con cada persona.</p>
     </div>
   </section>
 
@@ -182,7 +210,7 @@
       const resultado = document.getElementById('resultadoIMC');
 
       if (!peso || !altura) {
-        resultado.textContent = 'Por favor, completa todos los campos.';
+        resultado.textContent = 'Completa todos los campos.';
         return;
       }
 
