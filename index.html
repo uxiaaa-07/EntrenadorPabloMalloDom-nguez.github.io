@@ -1,62 +1,195 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <header>
-     <title>Entrenador PABLO MALLO DOMÍNGUEZ</title>
-    <div class="contenedor">
-        <nav>
-            <div class="logo">
-                <span>Pablo Mallo Domínguez</span> · Entrenador Personal y Coach Físico
-            </div>
-            <div class="nav-links">
-                <a href="#inicio">Inicio</a>
-                <a href="#metodo">Método de Pablo Mallo</a>
-                <a href="#planes">Planes</a>
-                <a href="#carta-ejercicios">Ejercicios</a>
-                <a href="#nutricion">Nutrición</a>
-                <a href="#resultados">Resultados</a>
-                <a href="#faq">Preguntas</a>
-                <a href="#trabaja-conmigo">Trabaja con Pablo</a>
-                <a href="#protocolo-acoso">Protocolo</a>
-                <a href="#privacidad" class="destacado-menu">Privacidad</a>
-            </div>
-        </nav>
-    </div>
-</header>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pablo Mallo Domínguez | Entrenador Personal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 3rem 1rem;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 2.5rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #00e6e6;
+      margin-bottom: 1rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #00ffcc;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .calculator input {
+      width: 100%;
+      padding: 0.6rem;
+      margin: 0.5rem 0;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .calculator button {
+      margin-top: 0.5rem;
+      padding: 0.7rem;
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+      background: #00e6e6;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .result {
+      margin-top: 0.8rem;
+      font-weight: bold;
+      color: #00ffcc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: rgba(0,0,0,0.6);
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
 </head>
 <body>
-    <section id="inicio">
-    <div class="hero">
-        <div class="hero-izq">
-            <div class="tag-line">Coaching físico por Pablo Mallo Domínguez</div>
-            <h1>
-                El sistema de <span>Pablo Mallo Domínguez</span>,
-                entrenador personal y coach privado,
-                para esculpir tu físico con ejercicios claros y resultados medibles
-            </h1>
-          <img src="Foto2.jpg" alt="Mi foto" width="400">
-          <img src="Foto3.jpg" alt="Mi foto" width="400">
-          <img src="Foto4.jpg" alt="Mi foto" width="400">
-          <img src="Foto5.jpg" alt="Mi foto" width="400">
-          <img src="Foto6.jpg" alt="Mi foto" width="400">
-          <img src="Foto1.jpg" alt="Mi foto" width="400">
-            <p class="hero-sub">. </p>
-                Soy Pablo Mallo Domínguez, entrenador personal y coach especializado en unir
-                una carta de ejercicios sencilla pero muy efectiva con una pauta de alimentación
-                realista, para que consigas el físico que deseas sin perderte en rutinas genéricas.
-            </p>
-            <!-- resto igual -->
-        </div>
-        <!-- tarjeta derecha igual -->
+
+  <header>
+    <h1>Pablo Mallo Domínguez</h1>
+    <p>Entrenador Personal · Salud · Rendimiento · Bienestar</p>
+  </header>
+
+  <section>
+    <h2>Servicios Profesionales</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Eliminación de Grasa</h3>
+        <p>Programas enfocados en la reducción de grasa corporal de forma progresiva y saludable, combinando entrenamiento funcional, fuerza y control del esfuerzo.</p>
+      </div>
+      <div class="card">
+        <h3>Personalización de Rutinas</h3>
+        <p>Planes de entrenamiento adaptados a tu edad, condición física, objetivos y disponibilidad. Cada rutina es única y evoluciona contigo.</p>
+      </div>
+      <div class="card">
+        <h3>Mejora de la Condición Física</h3>
+        <p>Incremento de resistencia, fuerza, movilidad y coordinación, priorizando la prevención de lesiones y la técnica correcta.</p>
+      </div>
     </div>
-</section>
-  <section id="metodo">
-    <h2>Método de Pablo Mallo Domínguez</h2>
-    <p>
-        Como entrenador personal y coach, Pablo Mallo Domínguez se centra en un enfoque muy directo:
-        ejercicios clave por músculo, progresiones claras y una alimentación alineada con tus objetivos.
-    </p>
-    <!-- resto igual -->
-</section>
+  </section>
+
+  <section>
+    <h2>Cálculo Orientativo de Masa Muscular</h2>
+    <p>Introduce tus datos para obtener una estimación básica (no sustituye una evaluación profesional).</p>
+    <div class="card calculator">
+      <input type="number" id="peso" placeholder="Peso (kg)" />
+      <input type="number" id="altura" placeholder="Altura (cm)" />
+      <button onclick="calcularIMC()">Calcular IMC</button>
+      <div class="result" id="resultadoIMC"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ejercicios Básicos para Calentar</h2>
+    <div class="cards">
+      <div class="card">
+        <ul>
+          <li>Movilidad articular (cuello, hombros, caderas y rodillas)</li>
+          <li>Sentadillas controladas</li>
+          <li>Jumping jacks suaves</li>
+          <li>Rotaciones de tronco</li>
+          <li>Activación de core</li>
+        </ul>
+        <p>Un buen calentamiento prepara al cuerpo, mejora el rendimiento y reduce el riesgo de lesiones.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Por qué es Importante una Condición Física Saludable</h2>
+    <div class="card">
+      <p>Mantener una buena condición física mejora la calidad de vida, reduce el estrés, previene enfermedades, aumenta la energía diaria y fortalece tanto el cuerpo como la mente. El entrenamiento no es solo estética, es salud a largo plazo.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Protocolo de Acoso</h2>
+    <div class="card">
+      <p>Este espacio promueve el respeto absoluto. No se tolera ningún tipo de acoso, discriminación o conducta inapropiada. Cualquier situación será tratada con seriedad, confidencialidad y acciones inmediatas.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Trabaja Conmigo</h2>
+    <div class="card">
+      <p>Si buscas un entrenador comprometido con tu salud, progreso y bienestar, estás en el lugar correcto. El objetivo es ayudarte a construir hábitos sostenibles y una mejor versión de ti mismo.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 · Pablo Mallo Domínguez · Entrenador Personal</p>
+  </footer>
+
+  <script>
+    function calcularIMC() {
+      const peso = document.getElementById('peso').value;
+      const altura = document.getElementById('altura').value / 100;
+      const resultado = document.getElementById('resultadoIMC');
+
+      if (!peso || !altura) {
+        resultado.textContent = 'Por favor, completa todos los campos.';
+        return;
+      }
+
+      const imc = (peso / (altura * altura)).toFixed(2);
+      resultado.textContent = `Tu IMC estimado es: ${imc}`;
+    }
+  </script>
+
 </body>
 </html>
