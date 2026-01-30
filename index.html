@@ -16,38 +16,34 @@
     nav {
       position: sticky;
       top: 0;
-      background: rgba(0,0,0,0.85);
+      background: rgba(0,0,0,0.9);
       padding: 0.8rem;
       display: flex;
       justify-content: center;
       gap: 1rem;
       z-index: 1000;
+      flex-wrap: wrap;
     }
 
     nav a {
       color: #00e6e6;
       text-decoration: none;
       font-weight: bold;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
 
     header {
       padding: 4rem 1rem;
       text-align: center;
       background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b') center/cover no-repeat;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+        url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
     }
 
     section {
       padding: 3rem 1.5rem;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
-      scroll-margin-top: 80px;
+      scroll-margin-top: 100px;
     }
 
     h2 {
@@ -62,7 +58,7 @@
     }
 
     .card {
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.55);
       padding: 1.5rem;
       border-radius: 12px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.4);
@@ -70,8 +66,11 @@
 
     .card img {
       width: 100%;
+      height: 200px;
+      object-fit: cover;
       border-radius: 10px;
       margin-bottom: 1rem;
+      background: #000;
     }
 
     ul {
@@ -113,9 +112,10 @@
     <a href="#servicios">Servicios</a>
     <a href="#imc">Masa corporal</a>
     <a href="#calentamiento">Calentamiento</a>
+    <a href="#personalizado">Personalizado</a>
+    <a href="#facilidades">Facilidades</a>
     <a href="#salud">Salud</a>
-    <a href="#protocolo">Protocolo</a>
-    <a href="#contacto">Trabaja conmigo</a>
+    <a href="#contacto">Contacto</a>
   </nav>
 
   <header>
@@ -127,19 +127,19 @@
     <h2>Servicios Profesionales</h2>
     <div class="cards">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" alt="Entrenamiento de fuerza">
+        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07b?auto=format&fit=crop&w=800&q=80" alt="Entrenamiento de fuerza">
         <h3>Eliminación de Grasa</h3>
-        <p>Programas orientados a reducir grasa corporal de forma segura y sostenible.</p>
+        <p>Programas estructurados para reducir grasa corporal de forma saludable y sostenible.</p>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07b" alt="Rutina personalizada">
+        <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=800&q=80" alt="Rutina personalizada">
         <h3>Rutinas Personalizadas</h3>
-        <p>Entrenamientos adaptados a tu nivel, objetivos y disponibilidad.</p>
+        <p>Planes diseñados según tu nivel, objetivos y disponibilidad semanal.</p>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74" alt="Condición física">
+        <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&w=800&q=80" alt="Condición física">
         <h3>Condición Física</h3>
-        <p>Mejora de fuerza, resistencia y movilidad general.</p>
+        <p>Mejora global de fuerza, resistencia, movilidad y coordinación.</p>
       </div>
     </div>
   </section>
@@ -158,50 +158,13 @@
     <h2>Ejercicios Básicos de Calentamiento</h2>
     <div class="cards">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1599058918144-1ffabb6ab9a0" alt="Calentamiento">
+        <img src="https://images.unsplash.com/photo-1599058918144-1ffabb6ab9a0?auto=format&fit=crop&w=800&q=80" alt="Calentamiento físico">
         <ul>
           <li>Movilidad articular</li>
-          <li>Sentadillas</li>
+          <li>Sentadillas controladas</li>
           <li>Jumping jacks</li>
-          <li>Rotaciones de tronco</li>
+          <li>Activación de core</li>
         </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="salud">
-    <h2>Importancia de una Buena Condición Física</h2>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1546484959-f5b8d7d6f7d1" alt="Vida saludable">
-      <p>Una condición física saludable mejora la calidad de vida, previene enfermedades y fortalece la salud mental.</p>
-    </div>
-  </section>
-
-  <section id="protocolo">
-    <h2>Protocolo de Acoso</h2>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Respeto y valores">
-      <p>Se garantiza un entorno seguro, respetuoso y profesional para todas las personas.</p>
-    </div>
-  </section>
-
-  <section id="facilidades">
-    <h2>Facilidades y Metodología de Entrenamiento</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" alt="Entrenamiento online">
-        <h3>Entrenamiento Online</h3>
-        <p>Sesiones y seguimiento a distancia para entrenar desde casa o donde quieras, con la misma calidad y control que de forma presencial.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155" alt="Seguimiento del progreso">
-        <h3>Seguimiento Continuo</h3>
-        <p>Control de progreso, ajustes periódicos y feedback constante para garantizar resultados reales y seguros.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b" alt="Entrenamiento adaptable">
-        <h3>Adaptación Total</h3>
-        <p>Entrenamientos adaptados a lesiones, horarios complicados, principiantes o personas avanzadas.</p>
       </div>
     </div>
   </section>
@@ -210,28 +173,47 @@
     <h2>Entrenamiento 100% Personalizado</h2>
     <div class="cards">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883" alt="Evaluación física">
+        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=800&q=80" alt="Evaluación física">
         <h3>Evaluación Inicial</h3>
-        <p>Análisis del estado físico, hábitos y objetivos para crear un plan realista y eficaz desde el primer día.</p>
+        <p>Análisis completo del estado físico y objetivos.</p>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1594737625785-cf9c681a2b5a" alt="Plan de entrenamiento">
-        <h3>Plan a Medida</h3>
-        <p>Diseño de rutinas específicas según tu nivel, disponibilidad semanal y metas personales.</p>
+        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Motivación deportiva">
+        <h3>Motivación y Seguimiento</h3>
+        <p>Acompañamiento continuo para mantener constancia.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="facilidades">
+    <h2>Facilidades de Entrenamiento</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=800&q=80" alt="Entrenamiento online">
+        <h3>Entrenamiento Online</h3>
+        <p>Entrena desde cualquier lugar con seguimiento profesional.</p>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a" alt="Motivación">
-        <h3>Motivación y Constancia</h3>
-        <p>Acompañamiento profesional para mantener la adherencia al entrenamiento y evitar el abandono.</p>
+        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=800&q=80" alt="Adaptación entrenamiento">
+        <h3>Adaptación Total</h3>
+        <p>Rutinas adaptadas a lesiones, horarios y nivel físico.</p>
       </div>
+    </div>
+  </section>
+
+  <section id="salud">
+    <h2>Importancia de una Condición Física Saludable</h2>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1546484959-f5b8d7d6f7d1?auto=format&fit=crop&w=800&q=80" alt="Vida saludable">
+      <p>Mejor salud cardiovascular, mental y calidad de vida a largo plazo.</p>
     </div>
   </section>
 
   <section id="contacto">
     <h2>Trabaja Conmigo</h2>
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1594737625785-cf9c681a2b5a" alt="Entrenador personal">
-      <p>Compromiso, cercanía y profesionalidad. El objetivo es ayudarte a alcanzar una condición física saludable y sostenible en el tiempo.</p>
+      <img src="https://images.unsplash.com/photo-1594737625785-cf9c681a2b5a?auto=format&fit=crop&w=800&q=80" alt="Entrenador personal">
+      <p>Compromiso, cercanía y profesionalidad para lograr resultados reales.</p>
     </div>
   </section>
 
