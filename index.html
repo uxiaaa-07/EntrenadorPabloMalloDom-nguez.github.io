@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#00e6e6">
+  <!-- Favicon para navegador -->
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/icon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32.png">
+
+<!-- Icono para iOS -->
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-180.png">
+
+<!-- Icono de Android/Progressive Web App -->
+<link rel="manifest" href="/manifest.json">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pablo Mallo Domínguez | Entrenador Personal</title>
   <style>
-    <script>
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("service-worker.js");
-  }
-</script>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
