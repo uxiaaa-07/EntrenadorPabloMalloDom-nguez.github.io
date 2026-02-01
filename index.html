@@ -33,24 +33,25 @@
     }
 
     header {
-      min-height: 90vh;
+      min-height: 95vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
       padding: 2rem;
-      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-        url('https://picsum.photos/1600/900?fitness') center/cover no-repeat;
+      background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+        url('https://picsum.photos/1600/900?athlete') center/cover no-repeat;
     }
 
     header h1 {
       font-size: 3rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.6rem;
     }
 
     header p {
-      max-width: 700px;
+      max-width: 720px;
       font-size: 1.2rem;
       opacity: 0.95;
     }
@@ -82,32 +83,40 @@
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 1.8rem;
     }
 
     .card {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 1.8rem;
-      border-radius: 14px;
+      background: rgba(0, 0, 0, 0.65);
+      padding: 2rem 1.8rem;
+      border-radius: 16px;
       box-shadow: 0 12px 30px rgba(0,0,0,0.45);
-      transition: transform 0.3s;
+      text-align: center;
     }
 
-    .card:hover {
-      transform: translateY(-6px);
-    }
-
-    .img-box {
-      height: 180px;
-      border-radius: 12px;
+    .icon {
+      font-size: 3rem;
       margin-bottom: 1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .gallery-item {
+      height: 220px;
+      border-radius: 16px;
       background-size: cover;
       background-position: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
     }
 
     ul {
       padding-left: 1.2rem;
+      text-align: left;
     }
 
     .calculator input, .calculator button {
@@ -156,6 +165,7 @@
     <a href="#servicios">Servicios</a>
     <a href="#personalizado">Personalización</a>
     <a href="#facilidades">Facilidades</a>
+    <a href="#galeria">Galería</a>
     <a href="#imc">Masa corporal</a>
     <a href="#calentamiento">Calentamiento</a>
     <a href="#salud">Salud</a>
@@ -163,20 +173,20 @@
 
   <header>
     <h1>Pablo Mallo Domínguez</h1>
-    <p>Entrenador personal especializado en ayudarte a construir una condición física saludable, funcional y sostenible en el tiempo.</p>
+    <p>Entrenador personal centrado en esfuerzo real, disciplina y mejora física sostenible.</p>
   </header>
 
   <section id="servicios">
     <h2>Qué puedo hacer por ti</h2>
-    <p class="subtitle">Servicios enfocados en resultados reales, salud y progreso continuo.</p>
+    <p class="subtitle">Entrenamiento con sentido, adaptado a personas reales.</p>
     <div class="cards">
       <div class="card">
-        <div class="img-box" style="background-image:url('https://picsum.photos/600/400?training');"></div>
+        <div class="icon">🔥</div>
         <h3>Eliminación de grasa</h3>
-        <p>Programas progresivos que priorizan la salud metabólica y la constancia.</p>
+        <p>Reducción progresiva de grasa corporal sin extremos ni riesgos.</p>
       </div>
       <div class="card">
-        <div class="img-box" style="background-image:url('https://picsum.photos/600/400?workout');"></div>
+        <div class="icon">💪</div>
         <h3>Mejora física global</h3>
         <p>Fuerza, resistencia, movilidad y control corporal.</p>
       </div>
@@ -185,41 +195,53 @@
 
   <section id="personalizado">
     <h2>Entrenamiento realmente personalizado</h2>
-    <p class="subtitle">Cada persona es diferente, y su entrenamiento también debe serlo.</p>
+    <p class="subtitle">No hay dos cuerpos iguales, ni dos rutinas iguales.</p>
     <div class="cards">
       <div class="card">
-        <div class="img-box" style="background-image:url('https://picsum.photos/600/400?analysis');"></div>
+        <div class="icon">📋</div>
         <h3>Evaluación inicial</h3>
-        <p>Análisis de nivel, hábitos, objetivos y limitaciones.</p>
+        <p>Análisis de tu punto de partida, hábitos y objetivos.</p>
       </div>
       <div class="card">
-        <div class="img-box" style="background-image:url('https://picsum.photos/600/400?motivation');"></div>
+        <div class="icon">🎯</div>
         <h3>Seguimiento constante</h3>
-        <p>Ajustes y apoyo continuo para no estancarte.</p>
+        <p>Ajustes continuos para asegurar progreso real.</p>
       </div>
     </div>
   </section>
 
   <section id="facilidades">
     <h2>Facilidades que se adaptan a ti</h2>
-    <p class="subtitle">El entrenamiento debe encajar en tu vida, no al revés.</p>
+    <p class="subtitle">El entrenamiento debe encajar en tu vida.</p>
     <div class="cards">
       <div class="card">
-        <div class="img-box" style="background-image:url('https://picsum.photos/600/400?home');"></div>
+        <div class="icon">🏠</div>
         <h3>Entrenamiento online</h3>
-        <p>Entrena desde cualquier lugar con supervisión profesional.</p>
+        <p>Entrena desde casa con supervisión profesional.</p>
       </div>
       <div class="card">
-        <div class="img-box" style="background-image:url('https://picsum.photos/600/400?schedule');"></div>
+        <div class="icon">⏰</div>
         <h3>Horarios flexibles</h3>
         <p>Adaptado a tu disponibilidad real.</p>
       </div>
     </div>
   </section>
 
+  <section id="galeria">
+    <h2>Esfuerzo, disciplina y movimiento</h2>
+    <p class="subtitle">Imágenes que representan el trabajo físico real.</p>
+    <div class="gallery">
+      <div class="gallery-item" style="background-image:url('https://picsum.photos/600/400?running');"></div>
+      <div class="gallery-item" style="background-image:url('https://picsum.photos/600/400?gym');"></div>
+      <div class="gallery-item" style="background-image:url('https://picsum.photos/600/400?strength');"></div>
+      <div class="gallery-item" style="background-image:url('https://picsum.photos/600/400?crossfit');"></div>
+      <div class="gallery-item" style="background-image:url('https://picsum.photos/600/400?training');"></div>
+    </div>
+  </section>
+
   <section id="imc">
     <h2>Orientación corporal</h2>
-    <p class="subtitle">Una referencia inicial para conocer tu punto de partida.</p>
+    <p class="subtitle">Una referencia para conocer tu punto de partida.</p>
     <div class="card calculator">
       <input type="number" id="peso" placeholder="Peso (kg)">
       <input type="number" id="altura" placeholder="Altura (cm)">
@@ -242,16 +264,16 @@
 
   <section id="salud">
     <h2>Entrenar es salud</h2>
-    <p class="subtitle">No se trata solo de verte mejor, sino de vivir mejor.</p>
+    <p class="subtitle">La condición física es una inversión de por vida.</p>
     <div class="card">
-      <p>Una buena condición física mejora tu energía, reduce el estrés, previene lesiones y te da autonomía a largo plazo.</p>
+      <p>Mejorar tu forma física aumenta tu energía, reduce el estrés y te permite vivir con mayor autonomía y bienestar.</p>
     </div>
   </section>
 
   <section class="cta">
     <h2>Empieza hoy</h2>
-    <p>Tu cuerpo es el único lugar donde vas a vivir siempre. Cuídalo, fortalécelo y respétalo.
-    El mejor momento para empezar no es mañana, es ahora.</p>
+    <p>El progreso no es magia: es constancia, esfuerzo y disciplina diaria.
+    Empieza hoy a construir el cuerpo y la salud que te acompañarán toda la vida.</p>
   </section>
 
   <footer>
