@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00e6e6">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pablo Mallo Domínguez | Entrenador Personal</title>
   <style>
+    <script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+  }
+</script>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
