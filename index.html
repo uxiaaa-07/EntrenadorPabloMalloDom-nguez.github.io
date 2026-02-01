@@ -42,7 +42,7 @@
       padding: 2rem;
       background:
         linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
-        url('https://picsum.photos/1600/900?athlete') center/cover no-repeat;
+        url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
     }
 
     header h1 {
@@ -231,11 +231,11 @@
     <h2>Esfuerzo, disciplina y movimiento</h2>
     <p class="subtitle">Imágenes que representan el trabajo físico real.</p>
     <div class="gallery">
-      <div class="gallery-item" style="background-image:url('https://picsum.photos/600/400?running');"></div>
-      <div class="gallery-item" style="background-image:url('https://picsum.photos/600/400?gym');"></div>
-      <div class="gallery-item" style="background-image:url('https://picsum.photos/600/400?strength');"></div>
-      <div class="gallery-item" style="background-image:url('https://picsum.photos/600/400?crossfit');"></div>
-      <div class="gallery-item" style="background-image:url('https://picsum.photos/600/400?training');"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1526401485004-2aa7f3b8d8a9?auto=format&fit=crop&w=800&q=80');"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1517960413843-0aee8e2d471c?auto=format&fit=crop&w=800&q=80');"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1599058917212-d750089bc07c?auto=format&fit=crop&w=800&q=80');"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80');"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80');"></div>
     </div>
   </section>
 
@@ -285,6 +285,19 @@
       const peso = document.getElementById('peso').value;
       const altura = document.getElementById('altura').value / 100;
       const resultado = document.getElementById('resultadoIMC');
+
+      if (!peso || !altura) {
+        resultado.textContent = 'Completa todos los campos.';
+        return;
+      }
+
+      const imc = (peso / (altura * altura)).toFixed(2);
+      resultado.textContent = `Tu IMC estimado es: ${imc}`;
+    }
+  </script>
+
+</body>
+</html>
 
       if (!peso || !altura) {
         resultado.textContent = 'Completa todos los campos.';
