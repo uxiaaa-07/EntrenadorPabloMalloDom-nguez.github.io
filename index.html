@@ -33,44 +33,77 @@
     }
 
     header {
-      padding: 4rem 1rem;
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      padding: 2rem;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url('https://picsum.photos/1600/900?fitness') center/cover no-repeat;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      max-width: 700px;
+      font-size: 1.2rem;
+      opacity: 0.95;
     }
 
     section {
-      padding: 3rem 1.5rem;
+      padding: 4rem 1.5rem;
       max-width: 1100px;
       margin: auto;
       scroll-margin-top: 100px;
     }
 
+    section:nth-child(even) {
+      background: rgba(0,0,0,0.25);
+    }
+
     h2 {
       color: #00e6e6;
-      margin-bottom: 1rem;
+      margin-bottom: 1.2rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .subtitle {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 2.5rem;
+      opacity: 0.9;
     }
 
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
+      gap: 1.8rem;
     }
 
     .card {
-      background: rgba(0, 0, 0, 0.55);
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1.8rem;
+      border-radius: 14px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+      transition: transform 0.3s;
     }
 
-    .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .img-box {
+      height: 180px;
+      border-radius: 12px;
       margin-bottom: 1rem;
-      background: #000;
+      background-size: cover;
+      background-position: center;
     }
 
     ul {
@@ -79,9 +112,9 @@
 
     .calculator input, .calculator button {
       width: 100%;
-      padding: 0.7rem;
+      padding: 0.8rem;
       margin: 0.4rem 0;
-      border-radius: 6px;
+      border-radius: 8px;
       border: none;
     }
 
@@ -97,10 +130,21 @@
       color: #00ffcc;
     }
 
+    .cta {
+      background: linear-gradient(120deg, #00e6e6, #00b3b3);
+      color: #000;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .cta h2 {
+      color: #000;
+    }
+
     footer {
       text-align: center;
       padding: 2rem 1rem;
-      background: rgba(0,0,0,0.6);
+      background: rgba(0,0,0,0.9);
       font-size: 0.9rem;
       opacity: 0.8;
     }
@@ -110,42 +154,72 @@
 
   <nav>
     <a href="#servicios">Servicios</a>
+    <a href="#personalizado">Personalización</a>
+    <a href="#facilidades">Facilidades</a>
     <a href="#imc">Masa corporal</a>
     <a href="#calentamiento">Calentamiento</a>
-    <a href="#personalizado">Personalizado</a>
-    <a href="#facilidades">Facilidades</a>
     <a href="#salud">Salud</a>
-    <a href="#contacto">Contacto</a>
   </nav>
 
   <header>
     <h1>Pablo Mallo Domínguez</h1>
-    <p>Entrenador Personal · Salud · Rendimiento</p>
+    <p>Entrenador personal especializado en ayudarte a construir una condición física saludable, funcional y sostenible en el tiempo.</p>
   </header>
 
   <section id="servicios">
-    <h2>Servicios Profesionales</h2>
+    <h2>Qué puedo hacer por ti</h2>
+    <p class="subtitle">Servicios enfocados en resultados reales, salud y progreso continuo.</p>
     <div class="cards">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07b?auto=format&fit=crop&w=800&q=80" alt="Entrenamiento de fuerza">
-        <h3>Eliminación de Grasa</h3>
-        <p>Programas estructurados para reducir grasa corporal de forma saludable y sostenible.</p>
+        <div class="img-box" style="background-image:url('https://picsum.photos/600/400?training');"></div>
+        <h3>Eliminación de grasa</h3>
+        <p>Programas progresivos que priorizan la salud metabólica y la constancia.</p>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=800&q=80" alt="Rutina personalizada">
-        <h3>Rutinas Personalizadas</h3>
-        <p>Planes diseñados según tu nivel, objetivos y disponibilidad semanal.</p>
+        <div class="img-box" style="background-image:url('https://picsum.photos/600/400?workout');"></div>
+        <h3>Mejora física global</h3>
+        <p>Fuerza, resistencia, movilidad y control corporal.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="personalizado">
+    <h2>Entrenamiento realmente personalizado</h2>
+    <p class="subtitle">Cada persona es diferente, y su entrenamiento también debe serlo.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="img-box" style="background-image:url('https://picsum.photos/600/400?analysis');"></div>
+        <h3>Evaluación inicial</h3>
+        <p>Análisis de nivel, hábitos, objetivos y limitaciones.</p>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&w=800&q=80" alt="Condición física">
-        <h3>Condición Física</h3>
-        <p>Mejora global de fuerza, resistencia, movilidad y coordinación.</p>
+        <div class="img-box" style="background-image:url('https://picsum.photos/600/400?motivation');"></div>
+        <h3>Seguimiento constante</h3>
+        <p>Ajustes y apoyo continuo para no estancarte.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="facilidades">
+    <h2>Facilidades que se adaptan a ti</h2>
+    <p class="subtitle">El entrenamiento debe encajar en tu vida, no al revés.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="img-box" style="background-image:url('https://picsum.photos/600/400?home');"></div>
+        <h3>Entrenamiento online</h3>
+        <p>Entrena desde cualquier lugar con supervisión profesional.</p>
+      </div>
+      <div class="card">
+        <div class="img-box" style="background-image:url('https://picsum.photos/600/400?schedule');"></div>
+        <h3>Horarios flexibles</h3>
+        <p>Adaptado a tu disponibilidad real.</p>
       </div>
     </div>
   </section>
 
   <section id="imc">
-    <h2>Cálculo Orientativo de Masa Corporal</h2>
+    <h2>Orientación corporal</h2>
+    <p class="subtitle">Una referencia inicial para conocer tu punto de partida.</p>
     <div class="card calculator">
       <input type="number" id="peso" placeholder="Peso (kg)">
       <input type="number" id="altura" placeholder="Altura (cm)">
@@ -155,66 +229,29 @@
   </section>
 
   <section id="calentamiento">
-    <h2>Ejercicios Básicos de Calentamiento</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1599058918144-1ffabb6ab9a0?auto=format&fit=crop&w=800&q=80" alt="Calentamiento físico">
-        <ul>
-          <li>Movilidad articular</li>
-          <li>Sentadillas controladas</li>
-          <li>Jumping jacks</li>
-          <li>Activación de core</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="personalizado">
-    <h2>Entrenamiento 100% Personalizado</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=800&q=80" alt="Evaluación física">
-        <h3>Evaluación Inicial</h3>
-        <p>Análisis completo del estado físico y objetivos.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Motivación deportiva">
-        <h3>Motivación y Seguimiento</h3>
-        <p>Acompañamiento continuo para mantener constancia.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="facilidades">
-    <h2>Facilidades de Entrenamiento</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=800&q=80" alt="Entrenamiento online">
-        <h3>Entrenamiento Online</h3>
-        <p>Entrena desde cualquier lugar con seguimiento profesional.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=800&q=80" alt="Adaptación entrenamiento">
-        <h3>Adaptación Total</h3>
-        <p>Rutinas adaptadas a lesiones, horarios y nivel físico.</p>
-      </div>
+    <h2>Preparación antes de entrenar</h2>
+    <p class="subtitle">Calentar bien es entrenar con inteligencia.</p>
+    <div class="card">
+      <ul>
+        <li>Movilidad articular</li>
+        <li>Activación muscular</li>
+        <li>Ejercicios dinámicos</li>
+      </ul>
     </div>
   </section>
 
   <section id="salud">
-    <h2>Importancia de una Condición Física Saludable</h2>
+    <h2>Entrenar es salud</h2>
+    <p class="subtitle">No se trata solo de verte mejor, sino de vivir mejor.</p>
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1546484959-f5b8d7d6f7d1?auto=format&fit=crop&w=800&q=80" alt="Vida saludable">
-      <p>Mejor salud cardiovascular, mental y calidad de vida a largo plazo.</p>
+      <p>Una buena condición física mejora tu energía, reduce el estrés, previene lesiones y te da autonomía a largo plazo.</p>
     </div>
   </section>
 
-  <section id="contacto">
-    <h2>Trabaja Conmigo</h2>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1594737625785-cf9c681a2b5a?auto=format&fit=crop&w=800&q=80" alt="Entrenador personal">
-      <p>Compromiso, cercanía y profesionalidad para lograr resultados reales.</p>
-    </div>
+  <section class="cta">
+    <h2>Empieza hoy</h2>
+    <p>Tu cuerpo es el único lugar donde vas a vivir siempre. Cuídalo, fortalécelo y respétalo.
+    El mejor momento para empezar no es mañana, es ahora.</p>
   </section>
 
   <footer>
